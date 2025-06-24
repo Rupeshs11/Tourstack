@@ -1,0 +1,239 @@
+/* User Profile Dropdown Styles */
+.user-profile {
+    position: relative;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-text {
+    color: white;
+    font-size: 0.95rem;
+    margin-right: 12px;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.profile-dropdown-btn {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.profile-dropdown-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 8px;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.profile-dropdown-btn:hover .profile-icon {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.username {
+    color: white;
+    font-size: 0.95rem;
+    margin-right: 8px;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-arrow {
+    color: white;
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+}
+
+.user-profile.show-dropdown .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.profile-dropdown-content {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.user-profile.show-dropdown .profile-dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.profile-header {
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f9f9f9;
+}
+
+.profile-header h3 {
+    margin: 0 0 5px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.profile-header p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.profile-info {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+}
+
+.profile-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-info-item:last-child {
+    margin-bottom: 0;
+}
+
+.profile-info-item i {
+    width: 25px;
+    color: #ff6600;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.profile-info-item span {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.profile-actions {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+}
+
+.profile-menu-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.profile-menu-link:hover {
+    color: #ff6600;
+    background-color: #f5f5f5;
+    transform: translateX(5px);
+}
+
+.profile-menu-link i {
+    width: 25px;
+    margin-right: 10px;
+    color: #ff6600;
+    font-size: 16px;
+}
+
+.profile-logout {
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.logout-link {
+    display: flex;
+    align-items: center;
+    color: #e74c3c;
+    text-decoration: none;
+    padding: 12px 10px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+.logout-link:hover {
+    color: #c0392b;
+    background-color: #f5f5f5;
+    transform: translateX(5px);
+}
+
+.logout-link i {
+    width: 25px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .profile-dropdown-content {
+        width: 280px;
+    }
+    
+    .welcome-text {
+        font-size: 0.85rem;
+    }
+    
+    .username {
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .profile-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome-text {
+        font-size: 0.8rem;
+        margin-right: 8px;
+    }
+    
+    .username {
+        display: none;
+    }
+    
+    .profile-icon {
+        margin-right: 5px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+} 
