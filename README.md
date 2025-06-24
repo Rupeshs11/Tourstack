@@ -39,7 +39,7 @@ TourStacks is a full-featured **Hotel Management Website** with integrated **Tou
 2. 🗂 Copy this project folder into `C:\xampp\htdocs\`
 3. ▶ Start **Apache** and **MySQL** from XAMPP control panel
 4. 🔧 Open **phpMyAdmin** at [localhost/phpmyadmin](http://localhost/phpmyadmin)
-5. 🗃 Create a new database (e.g., `tourstacks`) and import the provided `.sql` file (if any)
+5. 🗃 Create a new database (e.g., `tourstacks`) and import the provided `.sql` file
 6. 🌍 Open browser and go to:  
    [http://localhost/TourStacks](http://localhost/TourStacks)
 
@@ -47,7 +47,7 @@ TourStacks is a full-featured **Hotel Management Website** with integrated **Tou
 
 ## 🙌 Author
 
-Made with ❤️ by **Knox**
+Made with  by **Knox**aka(Rupesh)
 
 ---
 
