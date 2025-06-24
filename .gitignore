@@ -1,0 +1,19 @@
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore OS junk files
+.DS_Store
+Thumbs.db
+
+# Ignore vendor if you use Composer (optional)
+vendor/
+
+# Ignore database dumps (optional)
+*.sql
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
