@@ -11,9 +11,6 @@ Thumbs.db
 # Ignore vendor if you use Composer (optional)
 vendor/
 
-# Ignore database dumps (optional)
-*.sql
-
 # Ignore IDE/editor folders
 .vscode/
 .idea/
