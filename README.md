@@ -47,7 +47,7 @@ TourStacks is a full-featured **Hotel Management Website** with integrated **Tou
 
 ## 🙌 Author
 
-Made with  by **Knox**   (Rupesh)
+Made by **Knox**
 
 ---
 
