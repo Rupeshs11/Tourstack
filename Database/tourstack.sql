@@ -315,6 +315,7 @@ CREATE TABLE `tours` (
   `includes` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL
 ) ;
 
+
 --
 -- Dumping data for table `tours`
 --

@@ -372,7 +372,7 @@ include 'includes/header.php';
             <div class="col-md-8 mx-auto text-center">
                 <h1>Discover Amazing Adventures</h1>
                 <p class="hero-text mb-3">Experience breathtaking destinations with our guided tours and custom packages.</p>
-                <div class="hero-buttons mt-3">
+                <div class="hero-buttons col-12 d-flex justify-content-center mt-3">
                     <a href="#tours" class="btn btn-primary btn-sm me-2">Explore Tours</a>
                     <a href="#packages" class="btn btn-outline-dark btn-sm">View Packages</a>
                 </div>
